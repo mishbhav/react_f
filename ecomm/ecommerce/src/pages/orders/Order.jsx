@@ -5,7 +5,6 @@ import { ProductDetails } from './ProductDetails';
 export function Order({ order }) {
     return (
         <>
-
             <div className="order-header">
                 <div className="order-header-left-section">
                     <div className="order-date">
@@ -28,19 +27,7 @@ export function Order({ order }) {
                 {order.products.map((orderProduct) => {
                     return (
                         <Fragment key={orderProduct.product.id}>
-                            <div className="product-image-container">
-                                <img src={orderProduct.product.image} />
-                            </div>
-
-                            <ProductDetails orderProduct={orderProduct} />
-
-                            <div className="product-actions">
-                                <a href="/tracking">
-                                    <button className="track-package-button button-secondary">
-                                        Track package
-                                    </button>
-                                </a>
-                            </div>
+                            <ProductDetails orderProduct={orderProduct} />                            
                         </Fragment>
                     );
                 })}
