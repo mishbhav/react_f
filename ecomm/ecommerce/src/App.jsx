@@ -1,8 +1,8 @@
 
 import { HomePage } from './pages/home/HomePage'
 import { CheckoutPage } from './pages/checkout/CheckoutPages'
-import { Orders } from './pages/Orders'
-import { Tracking } from './pages/Tracking'
+import { Orders } from './pages/orders/Orders'
+import { Tracking } from './pages/orders/Tracking'
 import './App.css'
 import { Routes, Route } from 'react-router'
 import { useEffect, useState } from 'react'
