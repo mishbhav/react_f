@@ -3,7 +3,7 @@ import dayjs from 'dayjs';
 import { useEffect, useState } from 'react'
 import './CheckoutPages.css'
 import './checkout-header.css'
-import { formatMoney } from '../utils/money'
+import { formatMoney } from '../../utils/money'
 export function CheckoutPage({ cart }) {
     const [deliveryOptions, setDeliveryOptions] = useState([]);
     const [paymentSummary, setPaymentSummary] = useState(null);

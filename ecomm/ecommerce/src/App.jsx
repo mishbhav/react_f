@@ -1,6 +1,6 @@
 
-import { HomePage } from './pages/HomePage'
-import { CheckoutPage } from './pages/CheckoutPages'
+import { HomePage } from './pages/home/HomePage'
+import { CheckoutPage } from './pages/checkout/CheckoutPages'
 import { Orders } from './pages/Orders'
 import { Tracking } from './pages/Tracking'
 import './App.css'
