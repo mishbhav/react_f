@@ -20,7 +20,7 @@ const loadCart = async () => {
   return (
     <Routes>
       <Route index element={<HomePage cart={cart} loadCart={loadCart}/>} />
-      <Route path="checkout" element={<CheckoutPage cart={cart}/>} />
+      <Route path="checkout" element={<CheckoutPage cart={cart} loadCart={loadCart} />} />
       <Route path="orders" element={<Orders cart={cart}/>} />
       <Route path="tracking" element={<Tracking cart={cart} />} />
     </Routes>
